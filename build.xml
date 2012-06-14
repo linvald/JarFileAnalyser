@@ -1,0 +1,14 @@
+<project name="jarstuff" default="jar">
+
+<target name="jar">
+<delete file="jarFileBrowser.jar"/>
+<jar basedir="." 
+		jarfile="jarFileBrowser.jar" >
+   		<manifest>
+    		<attribute name="Main-Class" value="JarGUI"/>
+    		<attribute name="Class-Path" value="./lib ./img ./lib/ant.jar ./lib/java2html.jar ./lib/jode-1.1.1-embedded.jar"/>
+    		
+  		</manifest>
+</jar>
+</target>
+</project>
